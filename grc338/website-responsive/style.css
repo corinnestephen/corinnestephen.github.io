@@ -1,0 +1,197 @@
+/*CSS DOCUMENT*/
+
+html, body, div, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit;} /*My edited version of the Eric Meyer’s reset tool. You may want to include this in all of your future CSS files. */
+
+body {  
+    font-family: sans-serif;
+	background-color: rgb(223, 66, 22);  
+}  
+div.home-container { 
+	background: url('images/homepage.jpg') center center fixed;
+	background-size: cover;
+	position: relative;
+	min-height: 100vh;
+	align-items: center;
+
+}
+
+div.container { 
+	position: relative;
+	min-height: 100vh;
+	max-width: 80em;
+	margin: auto;
+	background-color: rgb(234, 227, 227);
+	padding-bottom: 0em;
+}
+
+/* >>> IMPORTANT: you have to change the wrap the content of your home page (index) in a div with a class home-container to make it work. If you used a div with the class container on your home, you’ll only need to change the name of the class.  */
+
+
+main { 
+	padding: 2em;
+	}
+img {
+    width: 100%; /*Please leave this line.*/
+     display: block;
+	 margin: auto;
+}
+header img {
+    width: 250px; /*Please leave this line.*/
+     display: block;
+	 margin: auto;
+}
+header {
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+	background: rgb(187, 183, 183);
+	padding: 0.5em 0.5em 0em 0.5em;
+	margin: auto;
+	text-align: right;
+	
+	}
+
+h1 {
+	width: auto;
+	}
+h2, h3, h4 {
+	font-weight: bold;
+		
+	}
+h2 {
+	font-size: 2em;
+	margin: auto;
+	padding-top: 0.5em;
+	}
+	
+h3 {
+	font-size: 1.3em;
+	margin-top: 2em;
+	margin-bottom: 0.5em;
+}
+h4 {
+	margin: auto;
+	font-size: 0.9em;
+}
+a {
+	text-decoration: none;
+	color: rgb(235, 188, 34);
+	background-color: blue;
+	}
+
+nav ul  {
+	text-align: right;
+	padding: 2em 1em 1em 1em;
+	margin: auto;
+	display: grid;
+	grid-template-columns: 3fr 1fr 1fr;
+	}
+	
+ul li 	{
+	list-style-type: none;
+	line-height: 1;
+	padding: 1em 1em 1em;
+	font-size: 1.5em;
+	font-style: bold;
+}
+
+figure {
+	margin-bottom: 1em;
+}
+
+main.menu ul {
+		padding: 0em;
+		display: grid;
+		grid-template-columns: repeat(2 1fr);
+
+}	
+
+main.menu ul li {
+		margin: auto;
+		align-items: center;
+}	
+
+p {
+	margin: 1em 0em 1em 0em;
+	line-height: 1.5em;
+	}
+div.menu-item {
+	display: grid;
+	grid-template-columns: 1fr auto;
+	align-items: center;
+	gap: 0.5em;
+
+}	
+p.description {
+	grid-column: 1;
+	margin: 0em 0em 0em 0em;
+	font-size: 0.8em;
+	}
+	
+p.price {
+	grid-column: 2;
+	color: red;
+	text-align: right;
+	font-size: 0.8em;
+	}
+	
+nav ul li {
+	text-transform: none;
+	font-weight: bold;
+	margin: 0em 0em 1.5em;
+	}
+	
+nav ul li a {
+	color: rgb(235, 188, 34);
+	background-color: rgb(23, 71, 228);
+	padding: 0.5em;
+	font-size: 1.5em;
+	}
+nav ul li.selected a {
+	background-color: rgb(233, 134, 41);
+	color: rgb(234, 227, 227);
+	font-weight: bold;
+}
+p.slogan {
+	font-size: 4em;
+	font-family: serif;
+	font-style: italic;
+	margin: 1em 0em 2em 0em;
+	color: rgb(234, 227, 227);	
+	}
+	
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 3rem; 
+  box-sizing: border-box;
+  padding: 1em 0.5em 0em 0.5em;
+  margin-bottom: 0;
+  background: rgb(235, 238, 53);
+}
+article {
+	max-width: 30em;
+	background-color: rgb(84, 188, 240);
+	color: rgb(13, 13, 1);
+	margin: auto;
+	padding: 0.5em 0.5em 1em 1em;
+	margin-bottom: 3em;
+	margin-top: 2em;
+}	
+address {
+	color: rgb(233, 134, 41);
+	padding-left: 2em;
+	line-height: 1.5em;
+	}
+
+footer p {
+	margin: auto;
+	padding-bottom: auto;
+}
+@media screen and (min-width: 60em) {
+	ul {
+		display: grid;
+		grid-template-columns: ;
+	}
+}
+
