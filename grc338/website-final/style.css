@@ -1,0 +1,242 @@
+/*CSS DOCUMENT*/
+
+html, body, div, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit;} /*My edited version of the Eric Meyer’s reset tool. You may want to include this in all of your future CSS files. */
+
+body {  
+	font-family: "Comfortaa", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: normal;
+	font-style: normal;
+	background-color: rgb(98, 135, 105);
+}  
+div.home-container { 
+	background: url('images/homepage.jpg') center center fixed;
+	background-size: cover;
+	position: relative;
+	min-height: 100vh;
+	align-items: center;
+	font-family: "Comfortaa", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: normal;
+	font-style: normal;
+}
+section.menu-section {
+	padding-top: 4em;
+	padding-bottom: 4em;
+	display: grid;
+}
+div.container { 
+	position: relative;
+	min-height: 100vh;
+	max-width: 80em;
+	margin: auto;
+	background-color: rgb(252, 254, 252);
+	padding-bottom: 0em;
+	text-align: auto;
+}
+
+/* >>> IMPORTANT: you have to change the wrap the content of your home page (index) in a div with a class home-container to make it work. If you used a div with the class container on your home, you’ll only need to change the name of the class.  */
+
+main { 
+	padding: 2em;
+	margin: auto;
+	}
+img {
+    width: 100%; /*Please leave this line.*/
+     display: block;
+	 margin: auto;
+}
+header img {
+    width: auto; /*Please leave this line.*/
+    display: block;
+	margin: auto;
+	display: grid;
+	
+}
+header {
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+	background: rgb(51, 35, 22);
+	padding: 0em 0.5em 0em 1em;
+	margin: auto;
+	margin-bottom: 0em;
+	text-align: right;
+	
+	}
+h1 {
+	width: 300px;
+	display: block;
+	}
+h2, h3, h4 {
+	font-weight: bold;
+		
+	}
+h2 {
+	font-size: 2em;
+	margin: auto;
+	padding-top: 0.5em;
+	margin-left: 1.5em;
+	margin-bottom: 1em;
+	}
+	
+h3 {
+	font-size: 1.2em;
+	margin-top: 2em;
+	margin-bottom: 0.5em;
+	font-style: bold;
+	margin-left: 2.5em;
+
+}
+h4 {
+	margin: auto;
+	font-size: 0.9em;
+	font-style: bold;
+	margin-left: 2.3em;
+}
+a {
+	text-decoration: none;
+	color: rgb(235, 188, 34);
+	background-color: blue;
+	}
+
+nav ul  {
+	text-align: right;
+	padding: 2em 1em 1em 1em;
+	margin: auto;
+	}
+	
+ul li 	{
+	list-style-type: none;
+	line-height: 1;
+	padding: 1em 1em 1em 1em;
+	font-size: 1em;
+	font-style: bold;
+}
+
+figure {
+	margin-bottom: auto;
+}
+figure img {
+	width: 70em;
+	
+}
+main.menu ul {
+		padding: 0em;
+}	
+
+main.menu ul li {
+		margin: auto;
+}	
+p {
+	margin: 1em 0em 1em 0em;
+	line-height: 2em;
+	}
+div.menu-item {
+	display: grid;
+	grid-template-columns: 1fr auto;
+	align-items: center;
+	gap: 0.5em;
+	margin: auto;
+
+}	
+p.description {
+	grid-column: 1;
+	margin: 0em 0em 0em 0em;
+	font-size: 0.8em;
+	margin-left: 2.6em;
+	}
+	
+p.price {
+	grid-column: 2;
+	color: red;
+	text-align: right;
+	font-size: 0.8em;
+	margin-right: 2.6em;
+	margin-bottom: 0em;
+	}	
+nav ul li {
+	text-transform: none;
+	font-weight: bold;
+	margin: 0em 0em 2em;
+	}
+	
+nav ul li a {
+	color: rgb(80, 111, 85);
+	background-color: rgb(252, 254, 252);
+	padding: 0.5em;
+	font-size: 1.5em;
+	}
+nav ul li.selected a {
+	background-color: rgb(98, 135, 105);
+	color: rgb(234, 227, 227);
+	font-weight: bold;
+}
+p.slogan {
+	font-size: 2.8em;
+	font-family: "Comfortaa", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: bold;
+	font-style: italic;
+	margin: 1em 0em 0em 0em;
+	color: rgb(255, 255, 255);	
+	text-align: center;
+	}
+	
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 4rem; 
+  box-sizing: border-box;
+  padding: 1em 0.5em 0em 0.5em;
+  margin-bottom: 0;
+  background: rgb(51, 35, 22);
+}
+article {
+	max-width: 30em;
+	color: rgb(13, 13, 1);
+	margin: auto;
+	text-align: center;
+}	
+address {
+	color: rgb;
+	line-height: 1.5em;
+	font-weight: bold;
+	text-align: center;
+	margin: auto;
+}
+.hours {
+	font-size: 0.9em;
+	margin: auto;
+	margin-left: 0em;
+line-height: 0.5em;	
+text-align: center;
+}
+.hours ul li {
+	text-align: center;
+	padding-top: 0em;
+	font-weight: bold;
+	margin-top: 0em;
+	color: rgb(51, 35, 22);
+}
+footer p {
+	margin: auto;
+	padding: 0em 0.5em 1em 0.5em;
+	color: rgb(252, 254, 252);
+}
+@media screen and (min-width: 60em) {
+	main.menu ul {
+		display: grid;
+		grid-template-columns: 50% 50%;
+		grid-gap: 0 2em;
+	}
+	nav ul {
+		margin: 1.5em 1.5em;
+	}
+	nav ul li {
+		display: inline;
+		font-size: 1.5em;
+		margin: 1.5em 1.5em;
+	}
+}
+
